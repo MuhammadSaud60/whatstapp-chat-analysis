@@ -3,6 +3,14 @@ import numpy as np
 import emoji
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
+import subprocess
+import sys
+
+try:
+    import emoji
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "emoji"])
+    import emoji
 
 def fetches(selected_user, df):
     
