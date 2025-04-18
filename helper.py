@@ -76,7 +76,7 @@ def timeline(selected_user, df):
     
     time = []
     for i in range(timeline.shape[0]):
-        time.append(f'{timeline['month'][i]} - {timeline['year'][i]}')
+        time.append(f"{timeline['month'][i]} - {timeline['year'][i]}")
     
     timeline['time'] = time
     fig, ax = plt.subplots()
